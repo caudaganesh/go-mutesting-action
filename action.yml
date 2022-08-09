@@ -21,7 +21,7 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: go install github.com/AntonStoeckl/go-mutesting/...@"$VERSION"
+    - run: go get -u github.com/AntonStoeckl/go-mutesting/...@"$VERSION"
       shell: bash
       env:
         VERSION: ${{ inputs.version }}
